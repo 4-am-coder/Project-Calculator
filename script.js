@@ -34,5 +34,12 @@ function point(){
 }
 function equal(){
     small_display.innerHTML = display.innerHTML;
-    display.innerHTML= eval(display.innerHTML);
+    try {
+        display.innerHTML= eval(display.innerHTML);
+      }
+      catch(err) {
+        display.innerHTML = err.message;
+      }
+    
+    
 }
