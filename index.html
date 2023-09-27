@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="small-container">
+            <h1>Calculator</h1>
+            <div id="small-display"></div>
+            <div class="calculator">
+                <div id="display"></div>
+                <div class="keypad">
+                    <div class="key-row">
+                        <div class="keys" id="clr" onclick="clr()">Clr</div>
+                        <div class="keys" id="quo" onclick="divide()">/</div>
+                        <div class="keys" id="pro" onclick="multiply()">x</div>
+                        <div class="keys" id="back" onclick="back()"><img src="images/backspace.png" alt=""></div>
+                    </div>
+                    <div class="key-row">
+                        <div class="keys" id="7" onclick="num(7)">7</div>
+                        <div class="keys" id="8" onclick="num(8)">8</div>
+                        <div class="keys" id="9" onclick="num(9)">9</div>
+                        <div class="keys" id="plus" onclick="plus()">+</div>
+                    </div>
+                    <div class="key-row">
+                        <div class="keys" id="4" onclick="num(4)">4</div>
+                        <div class="keys" id="5" onclick="num(5)">5</div>
+                        <div class="keys" id="6" onclick="num(6)">6</div>
+                        <div class="keys" id="minus" onclick="minus()">-</div>
+                    </div>
+                    <div class="key-row">
+                        <div class="keys" id="1" onclick="num(1)">1</div>
+                        <div class="keys" id="2" onclick="num(2)">2</div>
+                        <div class="keys" id="3" onclick="num(3)">3</div>
+                        <div class="keys" id="point" onclick="point()">.</div>
+                    </div>
+                    <div class="key-row">
+                        <div class="keys" id="o-brace" onclick="oBrace()">(</div>
+                        <div class="keys" id="0" onclick="num(0)">0</div>
+                        <div class="keys" id="c-brace" onclick="cBrace()">)</div>
+                        <div class="keys" id="equal" onclick="equal()">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

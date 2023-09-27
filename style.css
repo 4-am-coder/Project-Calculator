@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    transition: all 0.3s ease-in-out;
+    font-family: 'Carter One', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 39, 15);
+}
+.small-container{
+    background-color: black;
+    padding: 5px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(0, 133, 16);
+}
+.calculator{
+    width: 100%;
+    height: 100%;
+}
+#small-display{
+    background-color: rgb(59, 59, 59);
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px white ;
+    padding: 5px 15px;
+    margin: 5px;
+}
+#display{
+    height: 7vw;
+    min-width: 25vw;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    font-size: 3vw;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px white ;
+}
+.keypad{
+    margin: 8px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.key-row{
+    display: flex;
+}
+.keys{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    width: 100%;
+    height: 4.5vw;
+    margin: 10px 10px;
+    border-radius: 5px;
+    border-top-right-radius: 22px 29px;
+    border-bottom-left-radius: 22px 29px;
+    box-shadow: 1px 1px 3px rgb(160, 160, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:default;
+}
+#back img{
+    filter: invert();
+}
+.keys:hover{
+    transform: scale(1.1);
+}
+#equal:hover{
+    transform: scale(1.04);
+}
+.keys:active{
+    background-color: gray;
+}
+
+@media only screen and (max-width: 550px){
+    #display{
+        min-width: 80vw;
+        height: 20vw;
+        font-size: 7vw;
+    }
+    #small-display{
+        font-size: 5vw;
+    }
+    .keys{
+        height: 20vw;
+    }
+}
