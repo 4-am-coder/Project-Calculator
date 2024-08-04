@@ -72,6 +72,7 @@ html{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 #back img{
     filter: invert();
@@ -83,7 +84,8 @@ html{
     transform: scale(1.04);
 }
 .keys:active{
-    background-color: gray;
+    background-color: rgb(234, 234, 234);
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media only screen and (max-width: 550px){
